@@ -62,6 +62,13 @@
 
         </EditText>
     </com.google.android.material.textfield.TextInputLayout>
-    
+
+    <Button
+        android:layout_width="match_parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPassword"
+        android:layout_height="wrap_content"/>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
