@@ -15,6 +15,7 @@
         android:textSize="36sp"
         android:textColor="#000"
         android:textStyle="bold"
+        android:fontFamily="@font/sfpro_heavy"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_height="wrap_content"/>
 
@@ -63,7 +64,18 @@
         </EditText>
     </com.google.android.material.textfield.TextInputLayout>
 
-
-
+    <Button
+        android:layout_width="match_parent"
+        android:text="Sign in"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_custom"
+        android:fontFamily="@font/sfpro_heavy"
+        android:textColor="#fff"
+        app:layout_constraintTop_toBottomOf="@+id/tvPassword"
+        android:layout_height="wrap_content"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
