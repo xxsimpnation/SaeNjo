@@ -7,75 +7,51 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:text="Login"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/tvUsername"
-        app:layout_constraintStart_toStartOf="parent"
-        android:textSize="36sp"
-        android:textColor="#000"
-        android:textStyle="bold"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
         android:fontFamily="@font/sfpro_heavy"
+        android:gravity="center_horizontal"
+        android:text="Ready to be Productive?"
+        android:textColor="@color/green_500"
+        android:textSize="36sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_height="wrap_content"/>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tvUsername"
-        android:layout_width="match_parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="10dp"
-        android:layout_height="wrap_content">
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <EditText
-            android:id="@+id/edUsername"
-            android:text="Username"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Username"
-            android:autofillHints="">
-
-        </EditText>
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tvPassword"
+    <ImageView
+        android:id="@+id/landing_image"
         android:layout_width="match_parent"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="10dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/landing_page"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvUsername"
-        android:layout_height="wrap_content">
-
-        <EditText
-            android:id="@+id/edPassword"
-            android:text="Password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            android:hint="Password">
-
-        </EditText>
-    </com.google.android.material.textfield.TextInputLayout>
+        app:layout_constraintStart_toStartOf="parent"/>
 
     <Button
         android:layout_width="match_parent"
-        android:text="Sign in"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        android:layout_marginTop="30dp"
         android:background="@drawable/button_custom"
-        android:fontFamily="@font/sfpro_heavy"
-        android:textColor="#fff"
-        app:layout_constraintTop_toBottomOf="@+id/tvPassword"
-        android:layout_height="wrap_content"
-        />
+        android:layout_marginTop="450dp"
+        android:text="Let's do it"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintEnd_toStartOf="parent" />
+
+    <!--    <Button-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:text="Sign in"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:layout_marginStart="30dp"-->
+<!--        android:layout_marginEnd="30dp"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:background="@drawable/button_custom"-->
+<!--        android:fontFamily="@font/sfpro_heavy"-->
+<!--        android:textColor="#fff"-->
+<!--        android:layout_height="wrap_content" />-->
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
