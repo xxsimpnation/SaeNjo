@@ -17,8 +17,10 @@
         android:gravity="center_horizontal"
         android:text="What time do you usually wakeup?"
         android:textColor="@color/green_500"
-        android:textSize="36sp"
+        android:textSize="30sp"
         android:textStyle="bold"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -27,6 +29,7 @@
         android:id="@+id/landing_image"
         android:layout_width="match_parent"
         android:layout_height="265dp"
+        android:layout_marginTop="30dp"
         android:src="@drawable/tidur"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -36,12 +39,11 @@
         android:layout_height="199dp"
         android:layout_gravity="center"
         android:layout_margin="10dp"
-        android:orientation="horizontal"
-        android:layout_marginTop="10dp">
+        android:orientation="horizontal">
 
 
         <NumberPicker
-            android:id="@+id/numPickerMin"
+            android:id="@+id/numPickerHr"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
@@ -52,7 +54,7 @@
             android:layout_marginEnd="10dp" />
 
         <NumberPicker
-            android:id="@+id/numPickerSec"
+            android:id="@+id/numPickerMin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="10dp"

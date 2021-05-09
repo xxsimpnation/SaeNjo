@@ -16,5 +16,6 @@ class Wakeup : AppCompatActivity() {
             intent.putExtra("data", "test data")
             startActivity(intent)
         }
+
     }
 }
