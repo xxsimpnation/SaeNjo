@@ -12,7 +12,7 @@ class Wakeup : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_wakeup)
 
-        val nextBtn: Button = findViewById(R.id.btBangun)
+        val nextBtn: Button = findViewById(R.id.btMove)
         nextBtn.setOnClickListener{
             val intent = Intent(this, notification::class.java);
             intent.putExtra("data", "test data")

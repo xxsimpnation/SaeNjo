@@ -41,7 +41,6 @@
         android:layout_margin="10dp"
         android:orientation="horizontal">
 
-
         <NumberPicker
             android:id="@+id/numPickerHr"
             android:layout_width="wrap_content"
@@ -74,7 +73,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btBangun"
+        android:id="@+id/btMove"
         android:layout_gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

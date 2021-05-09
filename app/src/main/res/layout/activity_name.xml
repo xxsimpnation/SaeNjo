@@ -26,7 +26,7 @@
 
 
     <EditText
-        android:id="@+id/et_Name"
+        android:id="@+id/inputName"
         android:layout_width="match_parent"
         android:layout_height="44dp"
         android:backgroundTint="@color/green_500"
@@ -41,7 +41,7 @@
 
 
     <Button
-        android:id="@+id/btNama"
+        android:id="@+id/btMove"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"

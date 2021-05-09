@@ -10,7 +10,7 @@ class Name : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_name)
 
-        val nextBtn: Button = findViewById(R.id.btNama)
+        val nextBtn: Button = findViewById(R.id.btMove)
         nextBtn.setOnClickListener{
             val intent = Intent(this, Wakeup::class.java);
             intent.putExtra("data", "test data")
