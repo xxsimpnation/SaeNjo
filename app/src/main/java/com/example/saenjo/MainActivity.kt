@@ -7,6 +7,7 @@ import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import com.google.firebase.FirebaseApp
 
 class MainActivity : AppCompatActivity() {
 
@@ -29,7 +30,6 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("data", "test data")
             startActivity(intent)
         }
-
     }
 
 }

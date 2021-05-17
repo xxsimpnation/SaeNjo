@@ -1,85 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".Wakeup">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
 
-    <TextView
-        android:id="@+id/textView"
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:fontFamily="@font/sfpro_heavy"
-        android:gravity="center_horizontal"
-        android:text="What time do you usually wakeup?"
-        android:textColor="@color/green_500"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:layout_marginStart="50dp"
-        android:layout_marginEnd="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        tools:context=".Wakeup">
 
-    <ImageView
-        android:id="@+id/landing_image"
-        android:layout_width="match_parent"
-        android:layout_height="265dp"
-        android:layout_marginTop="30dp"
-        android:src="@drawable/tidur"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <LinearLayout
-        android:layout_width="289dp"
-        android:layout_height="199dp"
-        android:layout_gravity="center"
-        android:layout_margin="10dp"
-        android:orientation="horizontal">
-
-        <NumberPicker
-            android:id="@+id/numPickerHr"
-            android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="10dp" />
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="50dp"
+            android:fontFamily="@font/sfpro_heavy"
+            android:gravity="center_horizontal"
+            android:text="What time do you usually wakeup?"
+            android:textColor="@color/green_500"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <NumberPicker
-            android:id="@+id/numPickerMin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"/>
+        <ImageView
+            android:id="@+id/landing_image"
+            android:layout_width="match_parent"
+            android:layout_height="265dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/tidur"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
-        <NumberPicker
-            android:id="@+id/numPickerAm"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"/>
+        <LinearLayout
+            android:layout_width="289dp"
+            android:layout_height="199dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <NumberPicker
+                android:id="@+id/numPickerHr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <NumberPicker
+                android:id="@+id/numPickerMin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <NumberPicker
+                android:id="@+id/numPickerAm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btMove"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/button_custom"
+            android:text="Continue" />
 
     </LinearLayout>
-
-    <Button
-        android:id="@+id/btMove"
-        android:layout_width="match_parent"
-        android:layout_height="34dp"
-        android:layout_gravity="center"
-        android:layout_marginStart="50dp"
-        android:layout_marginEnd="50dp"
-        android:background="@drawable/button_custom"
-        android:text="Continue" />
-
-</LinearLayout>
+</ScrollView>
