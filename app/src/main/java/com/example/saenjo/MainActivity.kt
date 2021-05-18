@@ -23,12 +23,12 @@ class MainActivity : AppCompatActivity() {
         image.startAnimation(stb)
 
 
-        val nextBtn: Button = findViewById(R.id.btMove)
-        nextBtn.setOnClickListener{
-            val intent = Intent(this, Name::class.java);
-            intent.putExtra("data", "test data")
-            startActivity(intent)
-        }
+//        val nextBtn: Button = findViewById(R.id.btMove)
+//        nextBtn.setOnClickListener{
+//            val intent = Intent(this, Name::class.java);
+//            intent.putExtra("data", "test data")
+//            startActivity(intent)
+//        }
 
     }
 

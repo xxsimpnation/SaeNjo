@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:padding="50dp"
+    tools:context=".Mealtime">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What time do you"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:background="@drawable/tittle_custom"
+        android:fontFamily="@font/coolvetica_rg"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="34sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="have your meals"
+        android:textColor="@color/white"
+        android:background="@drawable/tittle_custom"
+        android:fontFamily="@font/coolvetica_rg"
+        android:textSize="34sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/textView1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/breakfast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/coolvetica_rg"
+        android:textSize="18sp"
+        android:text="Breakfast"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/textView2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        />
+    <LinearLayout
+        android:id="@+id/containerBreakfast"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/breakfast"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+
+        <EditText
+            android:id="@+id/inputHour1breakfast"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:background="@drawable/input_time"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"/>
+
+        <EditText
+            android:id="@+id/inputHour2breakfast"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:background="@drawable/input_time"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="40dp"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/grey"
+            android:text=":"
+            tools:ignore="RtlCompat" />
+
+        <EditText
+            android:id="@+id/inputMin1breakfast"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:background="@drawable/input_time"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"/>
+
+        <EditText
+            android:id="@+id/inputMin2breakfast"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:background="@drawable/input_time"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lunch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/coolvetica_rg"
+        android:textSize="18sp"
+        android:text="Lunch"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/containerBreakfast"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        />
+    <LinearLayout
+        android:id="@+id/containerLunch"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/lunch"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+
+        <EditText
+            android:id="@+id/inputHour1lunch"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:background="@drawable/input_time"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"/>
+
+        <EditText
+            android:id="@+id/inputHour2lunch"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:background="@drawable/input_time"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="40dp"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/grey"
+            android:text=":"
+            tools:ignore="RtlCompat" />
+
+        <EditText
+            android:id="@+id/inputMin1lunch"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:background="@drawable/input_time"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"/>
+
+        <EditText
+            android:id="@+id/inputMin2lunch"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:background="@drawable/input_time"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/coolvetica_rg"
+        android:textSize="18sp"
+        android:text="Dinner"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/containerLunch"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        />
+    <LinearLayout
+        android:id="@+id/containerDinner"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/dinner"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+
+        <EditText
+            android:id="@+id/inputHour1dinner"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:background="@drawable/input_time"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"/>
+
+        <EditText
+            android:id="@+id/inputHour2dinner"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:background="@drawable/input_time"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="40dp"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/grey"
+            android:text=":"
+            tools:ignore="RtlCompat" />
+
+        <EditText
+            android:id="@+id/inputMin1dinner"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:background="@drawable/input_time"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"/>
+
+        <EditText
+            android:id="@+id/inputMin2dinner"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:background="@drawable/input_time"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:text="Continue"
+        android:fontFamily="@font/coolvetica_rg"
+        android:background="@drawable/button_custom_trans"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
