@@ -14,13 +14,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val ttb = AnimationUtils.loadAnimation(this, R.anim.ttb)
-        val stb = AnimationUtils.loadAnimation(this, R.anim.stb)
-        val textView: TextView = findViewById(R.id.textView)
-        val image: ImageView = findViewById(R.id.landing_image)
-
-        textView.startAnimation(ttb)
-        image.startAnimation(stb)
+        val logo:ImageView = findViewById(R.id.logo)
+        logo.alpha = 0f
+        logo.animate().setDuration(1500).alpha(1f).withEndAction {
+            val intent = Intent(this, Login::class.java);
+            intent.putExtra("data", "test data")
+            startActivity(intent)
+        }
 
 
 //        val nextBtn: Button = findViewById(R.id.btMove)

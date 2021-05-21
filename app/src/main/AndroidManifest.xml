@@ -15,10 +15,6 @@
         <activity android:name=".PrivacyPolicy" />
         <activity android:name=".Signup" />
         <activity android:name=".Login" />
-        <activity android:name=".Minum" />
-        <activity android:name=".achieve" />
-        <activity android:name=".notification" />
-        <activity android:name=".Name" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
