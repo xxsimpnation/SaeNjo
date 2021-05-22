@@ -5,10 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
-import android.widget.NumberPicker
-import android.widget.Toast
-//import com.google.firebase.firestore.ktx.firestore
-//import com.google.firebase.ktx.Firebase
+import android.widget.EditText
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 
 class Wakeup : AppCompatActivity() {
 
@@ -16,17 +15,34 @@ class Wakeup : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_wakeup)
 
-//        val nextBtn: Button = findViewById(R.id.btMove)
-//        val numPickerHr: NumberPicker = findViewById(R.id.numPickerHr)
-//        val numPickerMin: NumberPicker = findViewById(R.id.numPickerMin)
-//        val numPickerAm: NumberPicker = findViewById(R.id.numPickerAm)
-//
-//        nextBtn.setOnClickListener{
-//            val intent = Intent(this, notification::class.java)
-//            UserData.storeWakeUpHr(numPickerHr.value, numPickerMin.value, numPickerAm.value)
-//            intent.putExtra("data", "test data")
-//            startActivity(intent)
-//        }
+        val Btn: Button = findViewById(R.id.btn)
+        val hour1: EditText = findViewById(R.id.inputHour1)
+        val hour2: EditText = findViewById(R.id.inputHour2)
+        val min1: EditText = findViewById(R.id.inputMin1)
+        val min2: EditText = findViewById(R.id.inputMin2)
+        val hr1: Int
+        val hr2: Int
+        val mnt1: Int
+        val mnt2: Int
+        hr1 = hour1.text.toString().toInt()
+        hr2 = hour2.text.toString().toInt()
+        mnt1 = min1.text.toString().toInt()
+        mnt2 = min2.text.toString().toInt()
+        val hr = StringBuilder()
+        val mn = StringBuilder()
+        hr.append(hr1).append(hr2).toString().toInt()
+        mn.append(min1).append(min2).toString().toInt()
+        val hour: Int= hr.toString().toInt()
+        val min: Int= mn.toString().toInt()
+
+        Btn.setOnClickListener{
+            val intent = Intent(this, Mealtime::class.java)
+            UserData.storeWakeUpHr(hour, min)
+            intent.putExtra("data", "test data")
+            startActivity(intent)
+        }
+        
+        
 //
 //        numPickerHr.maxValue = 12
 //        numPickerHr.minValue = 0
@@ -39,7 +55,7 @@ class Wakeup : AppCompatActivity() {
 //        numPickerMin.maxValue = 59
 //        numPickerMin.minValue = 0
 //
-//        numPickerHr.setOnClickListener {
+//        numPickerMin.setOnClickListener {
 //            Toast.makeText(this, numPickerMin.value.toString(), Toast.LENGTH_SHORT).show()
 //        }
 //

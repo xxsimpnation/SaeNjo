@@ -7,9 +7,9 @@ import com.google.firebase.ktx.Firebase
 object UserData {
     private val db = Firebase.firestore
 
-    fun storeWakeUpHr(hour: Int, minute: Int, am: Int) {
+    fun storeWakeUpHr(hour: Int, minute: Int) {
         val obj = hashMapOf(
-            "hour" to if (am == 0) hour else hour + 12,
+            "hour" to hour,
             "minute" to minute
         )
 
