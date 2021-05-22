@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SaeNjo">
-        <activity android:name=".Mealtime"></activity>
+        <activity android:name=".Notification"></activity>
+        <activity android:name=".Mealtime" />
         <activity android:name=".Wakeup" />
         <activity android:name=".HelloUsn" />
         <activity android:name=".PrivacyPolicy" />

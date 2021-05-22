@@ -23,13 +23,6 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-//        val nextBtn: Button = findViewById(R.id.btMove)
-//        nextBtn.setOnClickListener{
-//            val intent = Intent(this, Name::class.java);
-//            intent.putExtra("data", "test data")
-//            startActivity(intent)
-//        }
-
     }
 
 }

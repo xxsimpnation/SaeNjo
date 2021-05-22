@@ -6,8 +6,8 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
-import com.google.firebase.firestore.ktx.firestore
-import com.google.firebase.ktx.Firebase
+//import com.google.firebase.firestore.ktx.firestore
+//import com.google.firebase.ktx.Firebase
 
 class Wakeup : AppCompatActivity() {
 
@@ -15,7 +15,7 @@ class Wakeup : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_wakeup)
 
-        val Btn: Button = findViewById(R.id.btn)
+        val btn: Button = findViewById(R.id.btn)
         val hour1: EditText = findViewById(R.id.inputHour1)
         val hour2: EditText = findViewById(R.id.inputHour2)
         val min1: EditText = findViewById(R.id.inputMin1)
@@ -35,7 +35,7 @@ class Wakeup : AppCompatActivity() {
         val hour: Int= hr.toString().toInt()
         val min: Int= mn.toString().toInt()
 
-        Btn.setOnClickListener{
+        btn.setOnClickListener{
             val intent = Intent(this, Mealtime::class.java)
             UserData.storeWakeUpHr(hour, min)
             intent.putExtra("data", "test data")
