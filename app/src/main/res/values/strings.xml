@@ -4,4 +4,6 @@
     <string name="term_policy">By signing up you agree to our <font color='#8A0B5B'>Terms and Privacy policy</font></string>
     <string name="e_mail">E-mail</string>
     <string name="password">Password</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
 </resources>

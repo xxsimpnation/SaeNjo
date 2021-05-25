@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         val logo:ImageView = findViewById(R.id.logo)
         logo.alpha = 0f
         logo.animate().setDuration(1500).alpha(1f).withEndAction {
-            val intent = Intent(this, Login::class.java);
+            val intent = Intent(this, Homepage::class.java);
             intent.putExtra("data", "test data")
             startActivity(intent)
         }

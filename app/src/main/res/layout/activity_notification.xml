@@ -49,6 +49,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:padding="0dp"
+
             android:background="@drawable/notification_agree"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent">

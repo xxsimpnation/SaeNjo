@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    android:padding="50dp"
     tools:context=".PrivacyPolicy">
 
     <TextView
         android:id="@+id/textTop"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
         android:text="Terms and Privacy Policy"
         android:fontFamily="@font/coolvetica_rg"
         android:textSize="20sp"
@@ -25,7 +25,10 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="50dp"
         android:fontFamily="@font/coolvetica_rg"
         android:background="@drawable/button_custom_trans"
         app:layout_constraintTop_toBottomOf="@+id/textTop"
