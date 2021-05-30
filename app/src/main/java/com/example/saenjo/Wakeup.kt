@@ -6,8 +6,8 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
-import com.google.firebase.firestore.ktx.firestore
-import com.google.firebase.ktx.Firebase
+//import com.google.firebase.firestore.ktx.firestore
+//import com.google.firebase.ktx.Firebase
 
 class Wakeup : AppCompatActivity() {
 
@@ -23,7 +23,6 @@ class Wakeup : AppCompatActivity() {
 
         val hour = (hour1.text.toString() + hour2.text.toString()).toInt()
         val min = (min1.text.toString() + min2.text.toString()).toInt()
-
 
         btn.setOnClickListener{
             val intent = Intent(this, Mealtime::class.java)

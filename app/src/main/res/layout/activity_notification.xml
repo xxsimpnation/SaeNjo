@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="50dp"
+    android:background="@color/black"
+    tools:context=".Notification">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="300dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:background="@drawable/notification_agree"
+        android:padding="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingTop="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="Agree Notifications"
+            android:gravity="center_horizontal"
+            android:fontFamily="@font/coolvetica_rg"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="I Agree to all notifications\nthat included in the\nTerms and Privacy Policy"
+            android:gravity="center_horizontal"
+            android:fontFamily="@font/coolvetica_rg"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="0dp"
+
+            android:background="@drawable/notification_agree"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <android.widget.Button
+                android:id="@+id/cancel"
+                android:layout_width="150dp"
+                android:textColor="@color/white"
+                android:background="@drawable/notification_custom_agree_left"
+                android:layout_height="wrap_content"
+                android:shadowColor="@color/white"
+                android:text="Cancel"/>
+
+            <android.widget.Button
+                android:id="@+id/Agree"
+                android:layout_width="150dp"
+                android:textColor="@color/white"
+                android:background="@drawable/notification_custom_agree_right"
+                android:layout_height="wrap_content"
+                android:text="Agree"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

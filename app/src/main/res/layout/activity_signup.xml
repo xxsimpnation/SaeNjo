@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/icon"
         android:layout_marginTop="60dp"
-        android:textColor="@color/white"
+        android:textColor="@color/grey"
         android:hint="@string/e_mail"
         android:drawablePadding="10dp"
         android:fontFamily="@font/coolvetica_rg"
@@ -42,6 +42,7 @@
         android:id="@+id/username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/grey"
         app:layout_constraintTop_toBottomOf="@+id/email"
         android:layout_marginTop="20dp"
         android:drawablePadding="10dp"
@@ -59,6 +60,7 @@
         android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/grey"
         app:layout_constraintTop_toBottomOf="@+id/username"
         android:layout_marginTop="20dp"
         android:drawablePadding="10dp"
@@ -86,9 +88,10 @@
         app:layout_constraintRight_toRightOf="parent"/>
 
     <Button
-        android:id="@+id/login"
+        android:id="@+id/createAccount"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
+        android:padding="0dp"
         android:layout_marginTop="50dp"
         android:layout_marginStart="50dp"
         android:layout_marginEnd="50dp"

@@ -6,35 +6,42 @@
     android:layout_height="match_parent"
     android:background="@color/black"
     android:padding="50dp"
-    tools:context=".HelloUsn">
+    tools:context=".Drink">
 
     <TextView
-        android:id="@+id/hello"
-        android:layout_width="match_parent"
+        android:id="@+id/everyday"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="87dp"
-        android:text="Hello,"
+        android:background="@drawable/tittle_custom"
+        android:fontFamily="@font/coolvetica_rg"
+        android:paddingLeft="22dp"
+        android:text="Everyday"
+        android:layout_marginLeft="10dp"
+        android:paddingStart="10dp"
         android:textColor="@color/white"
-        android:fontFamily="@font/coolvetica_rg"
-        android:textSize="60sp"
+        android:textSize="34sp"
+        android:textAlignment="viewStart"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="start" />
 
     <TextView
-        android:id="@+id/usn"
-        android:layout_width="match_parent"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
-        android:text="Username"
-        android:textColor="@color/purple"
+        android:background="@drawable/tittle_custom"
         android:fontFamily="@font/coolvetica_rg"
-        android:textSize="50sp"
-        android:textAlignment="textEnd"
-        app:layout_constraintTop_toBottomOf="@id/hello"
+        android:paddingLeft="22dp"
+        android:text="Hydrating"
+        android:paddingStart="10dp"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:gravity="end" />
-        "/>
+        app:layout_constraintTop_toBottomOf="@id/everyday"
+        android:layout_marginRight="20dp" />
 
     <android.widget.Button
         android:id="@+id/wakeup"
@@ -47,7 +54,7 @@
         android:layout_marginEnd="50dp"
         android:fontFamily="@font/coolvetica_rg"
         android:text="Continue"
-        android:background="@drawable/button_custom_trans"
+        android:background="@drawable/button_costum_fill"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
