@@ -15,27 +15,17 @@ class Wakeup : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_wakeup)
 
-        val Btn: Button = findViewById(R.id.btn)
+        val btn: Button = findViewById(R.id.btn)
         val hour1: EditText = findViewById(R.id.inputHour1)
         val hour2: EditText = findViewById(R.id.inputHour2)
         val min1: EditText = findViewById(R.id.inputMin1)
         val min2: EditText = findViewById(R.id.inputMin2)
-        val hr1: Int
-        val hr2: Int
-        val mnt1: Int
-        val mnt2: Int
-        hr1 = hour1.text.toString().toInt()
-        hr2 = hour2.text.toString().toInt()
-        mnt1 = min1.text.toString().toInt()
-        mnt2 = min2.text.toString().toInt()
-        val hr = StringBuilder()
-        val mn = StringBuilder()
-        hr.append(hr1).append(hr2).toString().toInt()
-        mn.append(min1).append(min2).toString().toInt()
-        val hour: Int= hr.toString().toInt()
-        val min: Int= mn.toString().toInt()
 
-        Btn.setOnClickListener{
+        val hour = (hour1.text.toString() + hour2.text.toString()).toInt()
+        val min = (min1.text.toString() + min2.text.toString()).toInt()
+
+
+        btn.setOnClickListener{
             val intent = Intent(this, Mealtime::class.java)
             UserData.storeWakeUpHr(hour, min)
             intent.putExtra("data", "test data")
