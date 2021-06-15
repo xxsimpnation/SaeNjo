@@ -12,7 +12,7 @@ class HelloUsn : AppCompatActivity() {
 
         val wakeup: Button = findViewById(R.id.wakeup)
         wakeup.setOnClickListener {
-            val intent = Intent(this, Wakeup::class.java);
+            val intent = Intent(this, Homepage::class.java);
             startActivity(intent)
         }
     }
