@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:layout_marginTop="41dp"
-            android:layout_marginLeft="36dp"
+            android:layout_marginLeft="45dp"
             android:orientation="horizontal"
             android:layout_marginRight="36dp">
 
@@ -50,6 +50,499 @@
         </LinearLayout>
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="100dp"
+
+        android:layout_marginBottom="565dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        >
+
+        <ImageView
+            android:layout_width="63dp"
+            android:layout_height="63dp"
+            android:padding="0dp"
+            android:background="@drawable/circle"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            />
+        <ImageView
+            android:layout_width="63dp"
+            android:layout_height="63dp"
+            android:padding="0dp"
+            android:background="@drawable/circle"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            />
+        <ImageView
+            android:layout_width="63dp"
+            android:layout_height="63dp"
+            android:padding="0dp"
+            android:background="@drawable/circle"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            />
+        <ImageView
+            android:layout_width="63dp"
+            android:layout_height="63dp"
+            android:padding="0dp"
+            android:background="@drawable/circle"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginBottom="525dp"
+        android:layout_marginRight="36dp"
+        >
+
+        <LinearLayout
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="2dp">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:padding="0dp"
+                android:src="@drawable/sleep"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="18dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:text="Bed Time"
+                android:fontFamily="@font/coolvetica_rg"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="4dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="0dp"
+                android:src="@drawable/meals"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="18dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:text="Meals"
+                android:fontFamily="@font/coolvetica_rg"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="4dp">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:padding="0dp"
+                android:src="@drawable/hydrated"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:text="Hydrated"
+                android:fontFamily="@font/coolvetica_rg"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="0dp"
+                android:src="@drawable/workout"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="18dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:text="Workout"
+                android:fontFamily="@font/coolvetica_rg"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:layout_marginBottom="270dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Health Articles"
+                android:layout_marginLeft="45dp"
+                android:textSize="22sp"
+                android:fontFamily="@font/coolvetica_rg" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/ic_arrow"
+                android:textSize="22sp"
+                android:fontFamily="@font/coolvetica_rg" />
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/scrollview1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="45dp"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:layout_width="140dp"
+                            android:layout_height="125dp"
+                            android:layout_marginRight="13dp"
+                            android:src="@drawable/washhand"
+                            android:scaleType="centerCrop"
+                            android:adjustViewBounds="true"/>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/coolvetica_rg"
+                        android:text="Wash your hand before hand wash you"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:layout_width="140dp"
+                            android:layout_height="125dp"
+                            android:layout_marginRight="13dp"
+                            android:src="@drawable/buah_sayur"
+                            android:scaleType="centerCrop"
+                            android:adjustViewBounds="true"/>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/coolvetica_rg"
+                        android:text="Eat Vegetables before they attack you"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:layout_width="140dp"
+                            android:layout_height="125dp"
+                            android:layout_marginRight="13dp"
+                            android:src="@drawable/run"
+                            android:scaleType="centerCrop"
+                            android:adjustViewBounds="true"/>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/coolvetica_rg"
+                        android:text="Run guys run"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="45dp"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:layout_width="140dp"
+                            android:layout_height="125dp"
+                            android:layout_marginRight="13dp"
+                            android:src="@drawable/run"
+                            android:scaleType="centerCrop"
+                            android:adjustViewBounds="true"/>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/coolvetica_rg"
+                        android:text="Run guys run"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Workout Articles"
+                android:layout_marginLeft="45dp"
+                android:textSize="22sp"
+                android:fontFamily="@font/coolvetica_rg" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/ic_arrow"
+                android:textSize="22sp"
+                android:fontFamily="@font/coolvetica_rg" />
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/scrollview2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="45dp"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:layout_width="140dp"
+                            android:layout_height="125dp"
+                            android:layout_marginRight="13dp"
+                            android:src="@drawable/washhand"
+                            android:scaleType="centerCrop"
+                            android:adjustViewBounds="true"/>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/coolvetica_rg"
+                        android:text="Wash your hand before hand wash you"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:layout_width="140dp"
+                            android:layout_height="125dp"
+                            android:layout_marginRight="13dp"
+                            android:src="@drawable/buah_sayur"
+                            android:scaleType="centerCrop"
+                            android:adjustViewBounds="true"/>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/coolvetica_rg"
+                        android:text="Eat Vegetables before they attack you"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:layout_width="140dp"
+                            android:layout_height="125dp"
+                            android:layout_marginRight="13dp"
+                            android:src="@drawable/run"
+                            android:scaleType="centerCrop"
+                            android:adjustViewBounds="true"/>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/coolvetica_rg"
+                        android:text="Run guys run"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="45dp"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:layout_width="140dp"
+                            android:layout_height="125dp"
+                            android:layout_marginRight="13dp"
+                            android:src="@drawable/run"
+                            android:scaleType="centerCrop"
+                            android:adjustViewBounds="true"/>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/coolvetica_rg"
+                        android:text="Run guys run"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/sidebarView"
