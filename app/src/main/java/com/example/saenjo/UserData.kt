@@ -24,4 +24,58 @@ object UserData {
                 Log.w(tag, "Error adding document", e)
             }
     }
+
+    fun storeBreakfastTime(hourBreakfast: Int, minuteBreakfast: Int) {
+        val obj = hashMapOf(
+            "hourBreakfast" to hourBreakfast,
+            "minuteBreakfast" to minuteBreakfast
+        )
+
+        val tag = "BREAKFAST_STORE"
+
+        db.collection("users")
+            .add(hashMapOf("breakfastHours" to obj))
+            .addOnSuccessListener { documentReference ->
+                Log.d(tag, "DocumentSnapshot added with ID: ${documentReference.id}")
+            }
+            .addOnFailureListener { e ->
+                Log.w(tag, "Error adding document", e)
+            }
+    }
+
+    fun storeLunchTime(hourLunch: Int, minuteLunch: Int) {
+        val obj = hashMapOf(
+            "hourLunch" to hourLunch,
+            "minuteLunch" to minuteLunch
+        )
+
+        val tag = "LUNCH_STORE"
+
+        db.collection("users")
+            .add(hashMapOf("lunchHours" to obj))
+            .addOnSuccessListener { documentReference ->
+                Log.d(tag, "DocumentSnapshot added with ID: ${documentReference.id}")
+            }
+            .addOnFailureListener { e ->
+                Log.w(tag, "Error adding document", e)
+            }
+    }
+
+    fun storeDinnerTime(hourDinner: Int, minuteDinner: Int) {
+        val obj = hashMapOf(
+            "hourDinner" to hourDinner,
+            "minuteDinner" to minuteDinner
+        )
+
+        val tag = "DINNER_STORE"
+
+        db.collection("users")
+            .add(hashMapOf("dinnerHours" to obj))
+            .addOnSuccessListener { documentReference ->
+                Log.d(tag, "DocumentSnapshot added with ID: ${documentReference.id}")
+            }
+            .addOnFailureListener { e ->
+                Log.w(tag, "Error adding document", e)
+            }
+    }
 }
