@@ -30,37 +30,5 @@ class Wakeup : AppCompatActivity() {
             intent.putExtra("data", "test data")
             startActivity(intent)
         }
-        
-        
-//
-//        numPickerHr.maxValue = 12
-//        numPickerHr.minValue = 0
-//
-//        numPickerHr.setOnClickListener {
-//
-//            Toast.makeText(this, numPickerHr.value.toString(), Toast.LENGTH_SHORT).show()
-//        }
-//
-//        numPickerMin.maxValue = 59
-//        numPickerMin.minValue = 0
-//
-//        numPickerMin.setOnClickListener {
-//            Toast.makeText(this, numPickerMin.value.toString(), Toast.LENGTH_SHORT).show()
-//        }
-//
-//        val colors = arrayOf("AM", "PM")
-//        numPickerAm.minValue = 0
-//        numPickerAm.maxValue = colors.size - 1
-//
-//
-//        // Set the valued to be displayed in number picker
-//        numPickerAm.displayedValues = colors
-//
-//
-//        // Set number picker value change listener
-//        numPickerAm.setOnClickListener {
-//            Toast.makeText(
-//                    this, "${colors[numPickerAm.value]}", Toast.LENGTH_SHORT).show()
-//        }
     }
 }
