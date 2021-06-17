@@ -59,7 +59,7 @@ class Login_google : AppCompatActivity() {
         val firbaseUser = firebaseAuth.currentUser
         if (firbaseUser != null){
             //user already logged in
-            startActivity(Intent(this@Login_google, Wakeup::class.java))
+            startActivity(Intent(this@Login_google, Homepage::class.java))
             finish()
         }
     }
@@ -106,6 +106,10 @@ class Login_google : AppCompatActivity() {
                     Log.d(TAG, "firebaseAuthWithGoogleAccount: Existing user... \n$email")
                     Toast.makeText(this@Login_google, "LoggedIn... \n$email", Toast.LENGTH_SHORT).show()
                 }
+
+                //start next activity
+                startActivity(Intent(this@Login_google, Wakeup::class.java))
+                finish()
             }
             .addOnFailureListener{e ->
                 Log.d(TAG, "firebaseAuthWithGoogleAccount: Logging Failed due to ${e.message}")
