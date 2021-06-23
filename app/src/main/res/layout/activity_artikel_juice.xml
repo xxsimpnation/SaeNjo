@@ -14,7 +14,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="400dp"
-            android:background="@android:drawable/dialog_holo_light_frame"
+            app:cardElevation="0dp"
             >
 
             <ImageView
