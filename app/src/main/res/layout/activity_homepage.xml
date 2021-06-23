@@ -265,6 +265,7 @@
                     android:orientation="vertical">
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/juiceArtikel"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         app:cardCornerRadius="10dp">
@@ -273,7 +274,7 @@
                             android:layout_width="140dp"
                             android:layout_height="125dp"
                             android:layout_marginRight="13dp"
-                            android:src="@drawable/washhand"
+                            android:src="@drawable/juice"
                             android:scaleType="centerCrop"
                             android:adjustViewBounds="true"/>
                     </androidx.cardview.widget.CardView>
