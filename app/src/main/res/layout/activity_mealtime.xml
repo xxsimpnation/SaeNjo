@@ -32,8 +32,6 @@
         android:background="@drawable/tittle_custom"
         android:fontFamily="@font/coolvetica_rg"
         android:textSize="34sp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
         android:textAlignment="center"
         app:layout_constraintTop_toBottomOf="@id/textView1"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -74,6 +72,11 @@
             android:layout_height="80dp"
             android:background="@drawable/input_time"
             android:layout_gravity="center_vertical"
+            android:textSize="36sp"
+            android:textAlignment="center"
+            tools:ignore="RtlCompat"
+            android:inputType="number"
+            android:textColor="@color/white"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="5dp"/>
 
@@ -82,6 +85,11 @@
             android:layout_width="60dp"
             android:layout_height="80dp"
             android:background="@drawable/input_time"
+            android:textSize="36sp"
+            android:textAlignment="center"
+            tools:ignore="RtlCompat"
+            android:inputType="number"
+            android:textColor="@color/white"
             android:layout_gravity="center_vertical"
             android:layout_margin="5dp"/>
 
@@ -101,6 +109,11 @@
             android:layout_width="60dp"
             android:layout_height="80dp"
             android:background="@drawable/input_time"
+            android:textSize="36sp"
+            android:textAlignment="center"
+            tools:ignore="RtlCompat"
+            android:inputType="number"
+            android:textColor="@color/white"
             android:layout_gravity="center_vertical"
             android:layout_margin="5dp"/>
 
@@ -109,6 +122,11 @@
             android:layout_width="60dp"
             android:layout_height="80dp"
             android:background="@drawable/input_time"
+            android:textSize="36sp"
+            android:textAlignment="center"
+            tools:ignore="RtlCompat"
+            android:inputType="number"
+            android:textColor="@color/white"
             android:layout_gravity="center_vertical"
             android:layout_margin="5dp"/>
 
@@ -148,6 +166,11 @@
             android:layout_height="80dp"
             android:background="@drawable/input_time"
             android:layout_gravity="center_vertical"
+            android:textSize="36sp"
+            android:textAlignment="center"
+            tools:ignore="RtlCompat"
+            android:inputType="number"
+            android:textColor="@color/white"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="5dp"/>
 
@@ -156,6 +179,11 @@
             android:layout_width="60dp"
             android:layout_height="80dp"
             android:background="@drawable/input_time"
+            android:textSize="36sp"
+            android:textAlignment="center"
+            tools:ignore="RtlCompat"
+            android:inputType="number"
+            android:textColor="@color/white"
             android:layout_gravity="center_vertical"
             android:layout_margin="5dp"/>
 
@@ -175,6 +203,11 @@
             android:layout_width="60dp"
             android:layout_height="80dp"
             android:background="@drawable/input_time"
+            android:textSize="36sp"
+            android:textAlignment="center"
+            tools:ignore="RtlCompat"
+            android:inputType="number"
+            android:textColor="@color/white"
             android:layout_gravity="center_vertical"
             android:layout_margin="5dp"/>
 
@@ -183,6 +216,11 @@
             android:layout_width="60dp"
             android:layout_height="80dp"
             android:background="@drawable/input_time"
+            android:textSize="36sp"
+            android:textAlignment="center"
+            tools:ignore="RtlCompat"
+            android:inputType="number"
+            android:textColor="@color/white"
             android:layout_gravity="center_vertical"
             android:layout_margin="5dp"/>
 
@@ -221,6 +259,11 @@
             android:layout_width="60dp"
             android:layout_height="80dp"
             android:background="@drawable/input_time"
+            android:textSize="36sp"
+            android:textAlignment="center"
+            tools:ignore="RtlCompat"
+            android:inputType="number"
+            android:textColor="@color/white"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="5dp"/>
@@ -230,6 +273,11 @@
             android:layout_width="60dp"
             android:layout_height="80dp"
             android:background="@drawable/input_time"
+            android:textSize="36sp"
+            android:textAlignment="center"
+            tools:ignore="RtlCompat"
+            android:inputType="number"
+            android:textColor="@color/white"
             android:layout_gravity="center_vertical"
             android:layout_margin="5dp"/>
 
@@ -249,6 +297,11 @@
             android:layout_width="60dp"
             android:layout_height="80dp"
             android:background="@drawable/input_time"
+            android:textSize="36sp"
+            android:textAlignment="center"
+            tools:ignore="RtlCompat"
+            android:inputType="number"
+            android:textColor="@color/white"
             android:layout_gravity="center_vertical"
             android:layout_margin="5dp"/>
 
@@ -257,6 +310,11 @@
             android:layout_width="60dp"
             android:layout_height="80dp"
             android:background="@drawable/input_time"
+            android:textSize="36sp"
+            android:textAlignment="center"
+            tools:ignore="RtlCompat"
+            android:inputType="number"
+            android:textColor="@color/white"
             android:layout_gravity="center_vertical"
             android:layout_margin="5dp"/>
 
