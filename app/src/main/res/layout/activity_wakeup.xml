@@ -71,7 +71,7 @@
             android:layout_gravity="center_vertical"
             android:layout_margin="5dp"
             android:background="@drawable/input_time"
-            android:inputType="numberSigned" />
+            android:inputType="number" />
 
         <EditText
             android:id="@+id/inputHour2"
@@ -80,7 +80,7 @@
             android:layout_gravity="center_vertical"
             android:layout_margin="5dp"
             android:background="@drawable/input_time"
-            android:inputType="numberSigned" />
+            android:inputType="number" />
 
         <TextView
             android:layout_width="10dp"
@@ -100,7 +100,7 @@
             android:layout_gravity="center_vertical"
             android:layout_margin="5dp"
             android:background="@drawable/input_time"
-            android:inputType="numberSigned" />
+            android:inputType="number" />
 
         <EditText
             android:id="@+id/inputMin2"
@@ -109,7 +109,7 @@
             android:layout_gravity="center_vertical"
             android:layout_margin="5dp"
             android:background="@drawable/input_time"
-            android:inputType="numberSigned" />
+            android:inputType="number" />
 
     </LinearLayout>
 

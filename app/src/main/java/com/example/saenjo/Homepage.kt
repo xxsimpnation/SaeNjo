@@ -13,6 +13,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import android.view.View.OnClickListener;
 import android.widget.ImageView
+import android.widget.TextView
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
@@ -85,6 +86,15 @@ class Homepage : AppCompatActivity() {
             }
             true
         }
+
+//        firebaseAuth = FirebaseAuth.getInstance()
+//        val firebaseUser = firebaseAuth.currentUser
+//        val emailUser = firebaseUser!!.email
+//        val nameUser = firebaseUser!!.displayName
+//        val sidebarHeaderEmail : TextView = findViewById(R.id.email_user)
+//        val sidebarHeaderName : TextView = findViewById(R.id.name_user)
+//        sidebarHeaderEmail.text = emailUser
+//        sidebarHeaderName.text = nameUser
 
 //        val logout: Button = findViewById(R.id.item3)
 //        //initialize firebase auth

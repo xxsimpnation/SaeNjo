@@ -25,6 +25,24 @@ object UserData {
             }
     }
 
+    fun storeSleepHr(hour: Int, minute: Int) {
+        val obj = hashMapOf(
+            "hour" to hour-7,
+            "minute" to minute
+        )
+
+        val tag = "SLEEP_STORE"
+
+        db.collection("users")
+            .add(hashMapOf("sleepHours" to obj))
+            .addOnSuccessListener { documentReference ->
+                Log.d(tag, "DocumentSnapshot added with ID: ${documentReference.id}")
+            }
+            .addOnFailureListener { e ->
+                Log.w(tag, "Error adding document", e)
+            }
+    }
+
     fun storeBreakfastTime(hourBreakfast: Int, minuteBreakfast: Int) {
         val obj = hashMapOf(
             "hourBreakfast" to hourBreakfast,
@@ -71,6 +89,23 @@ object UserData {
 
         db.collection("users")
             .add(hashMapOf("dinnerHours" to obj))
+            .addOnSuccessListener { documentReference ->
+                Log.d(tag, "DocumentSnapshot added with ID: ${documentReference.id}")
+            }
+            .addOnFailureListener { e ->
+                Log.w(tag, "Error adding document", e)
+            }
+    }
+
+    fun storeDrink(ndrink: Int) {
+        val obj = hashMapOf(
+            "Drinking a day" to ndrink
+        )
+
+        val tag = "DRINK_STORE"
+
+        db.collection("users")
+            .add(hashMapOf("drinkingADay" to obj))
             .addOnSuccessListener { documentReference ->
                 Log.d(tag, "DocumentSnapshot added with ID: ${documentReference.id}")
             }

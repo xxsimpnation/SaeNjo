@@ -21,7 +21,7 @@ import com.google.firebase.auth.GoogleAuthProvider
 
 class Login_google : AppCompatActivity() {
 
-    //view binding
+//    //view binding
     private lateinit var binding: ActivityLoginGoogleBinding
 
     private lateinit var googleSignInClient: GoogleSignInClient
@@ -48,6 +48,7 @@ class Login_google : AppCompatActivity() {
         firebaseAuth = FirebaseAuth.getInstance()
         checkUser()
 
+        //val login : Button = findViewById(R.id.login)
         binding.login.setOnClickListener {
             Log.d(TAG, "onCreate: begin Google SignIn")
             val intent = googleSignInClient.signInIntent
@@ -101,14 +102,18 @@ class Login_google : AppCompatActivity() {
                 if (authResult.additionalUserInfo!!.isNewUser) {
                     Log.d(TAG, "firebaseAuthWithGoogleAccount: Account created... \n$email")
                     Toast.makeText(this@Login_google, "Account created... \n$email", Toast.LENGTH_SHORT).show()
+                    //startActivity(Intent(this@Login_google, Wakeup::class.java))
+                    //finish()
                 }
                 else{
                     Log.d(TAG, "firebaseAuthWithGoogleAccount: Existing user... \n$email")
                     Toast.makeText(this@Login_google, "LoggedIn... \n$email", Toast.LENGTH_SHORT).show()
+                    //startActivity(Intent(this@Login_google, Homepage::class.java))
+                    //finish()
                 }
 
                 //start next activity
-                startActivity(Intent(this@Login_google, Wakeup::class.java))
+                startActivity(Intent(this@Login_google, Homepage::class.java))
                 finish()
             }
             .addOnFailureListener{e ->
