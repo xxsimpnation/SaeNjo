@@ -265,13 +265,13 @@
                 android:orientation="horizontal" >
 
                 <LinearLayout
+                    android:id="@+id/juiceArtikel"
                     android:layout_width="140dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="45dp"
                     android:orientation="vertical">
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/juiceArtikel"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         app:cardCornerRadius="10dp">
