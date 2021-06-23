@@ -4,16 +4,13 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
-import android.widget.Button
-import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import android.view.View.OnClickListener;
-import android.widget.ImageView
-import android.widget.TextView
+import android.widget.*
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
@@ -45,6 +42,13 @@ class Homepage : AppCompatActivity() {
         val drink: ImageView = findViewById(R.id.drink)
         drink.setOnClickListener {
             val intent = Intent(this, Drink::class.java);
+            intent.putExtra("data", "test data")
+            startActivity(intent)
+        }
+
+        val juiceArtikel: LinearLayout = findViewById(R.id.juiceArtikel)
+        juiceArtikel.setOnClickListener {
+            val intent = Intent(this, ArtikelJuice::class.java);
             intent.putExtra("data", "test data")
             startActivity(intent)
         }
